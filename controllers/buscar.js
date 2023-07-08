@@ -8,6 +8,9 @@ const coleccionesPermitidas = [
     'productos',
     'roles'
 ];
+
+//Buscar producto por categoria {categoria: ObjectId('6470ef03a5eac19bd469f1b6')}
+
 const buscarUsuarios = async(termino = '', res = response) => {
     const isMongoId = ObjectId.isValid(termino);
     if(isMongoId) {
